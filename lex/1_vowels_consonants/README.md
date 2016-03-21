@@ -4,18 +4,18 @@
 > and consonants in a given string
 
 ## Compile Manually
-```sh
+```bash
 $ lex tokens.l
 $ cc lex.yy.c -o run
 ```
 
 ## Or Use `compile`
-```sh
+```bash
 $ ./compile
 ````
 
 ## Run Program
-```sh
+```bash
 $ ./run
 Enter String
 arithMetiC ExpreSSion
@@ -25,7 +25,7 @@ Consonants: 12
 ```
 
 ## Run tests provided
-```sh
+```bash
 $ ./run < test1
 ...
 
