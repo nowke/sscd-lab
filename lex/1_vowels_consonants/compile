@@ -1,0 +1,5 @@
+#!/bin/bash
+
+lex tokens.l
+cc lex.yy.c -o run
+rm -rf lex.yy.c
