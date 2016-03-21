@@ -1,12 +1,4 @@
-<<<<<<< HEAD
 # 12CS64 - Lab programs
-
-## Lex Programs (Part A)
-1. [Vowels - consonants](lex/1_vowels_consonants)
-
-=======
-# 12CS64 - Lab programs
-
 ## Lex Programs (Part A)
 1. [Vowels - consonants](lex/1_vowels_consonants)
 2. [Characters, Words, Lines](lex/2_words_chars_lines)
@@ -15,4 +7,3 @@
 5. ['scanf' & 'printf'](lex/5_printf_scanf)
 6. [Identifiers](lex/6_identifiers)
 7. [Find & Replace](lex/7_find_replace)
->>>>>>> 32536288dbae3c537b2fddcbc12187a860f3935a
