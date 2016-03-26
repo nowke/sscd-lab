@@ -1,15 +1,12 @@
-# Regex - a<sup>n</sup>b<sup>n+m</sup>c<sup>m</sup>
+# Regex - a<sup>n</sup>b<sup>n</sup>
 
 > Write a YACC program to recognize strings of the form
-> a<sup>n</sup>b<sup>n+m</sup>c<sup>m</sup>, n,m >= 0
+> a<sup>n</sup>b<sup>n</sup>, n >= 0
 
 ## Grammar
 
-> S &rarr; AB
-> 
-> A &rarr; aAb | &straightepsilon;
->
-> B &rarr; bBc | &straightepsilon;
+> S &rarr; aSb | ab | &straightepsilon;
+
 
 ## Compile Manually
 ```bash
@@ -25,21 +22,19 @@ $ ./compile
 ## Run Program
 ```bash
 $ ./run
-abbbcc
+ab
 Valid
-abbcc
-Invalid
+aabb
+Valid
 ```
 ## Run test provided
 ```bash
 $ cat test
-aabbbc
-abbc
-aabbbbcc
-abbbbccc
+ab
+aabb
+aaabbb
 
 $ ./run < test
-Valid
 Valid
 Valid
 Valid

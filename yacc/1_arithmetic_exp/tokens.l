@@ -1,18 +1,18 @@
 %{
-	#include "y.tab.h"
+    #include "y.tab.h"
 %}
 
 %%
-[0-9]+	{
-			yylval = atoi(yytext);
-			return INTEGER;
-		}
+[0-9]+  {
+            yylval = atoi(yytext);
+            return INTEGER;
+        }
 
 [-+()=/*\n]  {
-			return *yytext;
-		}
+            return *yytext;
+        }
 
-[ \t]	;
+[ \t]   ;
 %%
 
 int yywrap() { return 1; }
