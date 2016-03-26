@@ -7,3 +7,7 @@
 5. ['scanf' & 'printf'](lex/5_printf_scanf)
 6. [Identifiers](lex/6_identifiers)
 7. [Find & Replace](lex/7_find_replace)
+
+## Yacc Programs (Part B)
+1. [Arithmetic Expression Evaluation](yacc/1_arithmetic_exp)
+2. [String a<sup>n</sup>b<sup>n+m</sup>c<sup>m</sup>](yacc/2_regex_abc)
