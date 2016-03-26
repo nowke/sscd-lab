@@ -1,10 +1,10 @@
 %{
-	#include "y.tab.h"
+    #include "y.tab.h"
 %}
 
 %%
 
-[ab\n]		{ return *yytext; }
+[ab\n]      { return *yytext; }
 
 %%
 

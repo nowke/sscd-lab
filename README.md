@@ -12,3 +12,4 @@
 1. [Arithmetic Expression Evaluation](yacc/1_arithmetic_exp)
 2. [String a<sup>n</sup>b<sup>n+m</sup>c<sup>m</sup>](yacc/2_regex_abc)
 3. [String a<sup>n</sup>b<sup>n</sup>](yacc/3_regex_ab)
+4. [Expression Validation](yacc/4_expression_valid)

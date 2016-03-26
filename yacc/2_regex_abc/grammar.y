@@ -1,33 +1,33 @@
 %{
-	#include <stdio.h>
-	#include <stdlib.h>
+    #include <stdio.h>
+    #include <stdlib.h>
 %}
 
 %%
 
 statement:
-		statement S '\n' { printf("Valid\n"); }
-		|
-		;
+        statement S '\n' { printf("Valid\n"); }
+        |
+        ;
 
-S:	A B ;
+S:  A B ;
 
-A:	'a' A 'b'
-	|
-	;
+A:  'a' A 'b'
+    |
+    ;
 
 B: 'b' B 'c'
-	|
-	;
+    |
+    ;
 
 %%
 
 yyerror() {
-	printf("Invalid\n");
-	exit(1);
+    printf("Invalid\n");
+    exit(1);
 }
 
 int main() {
-	yyparse();
-	return 0;
+    yyparse();
+    return 0;
 }

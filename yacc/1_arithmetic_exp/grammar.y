@@ -1,6 +1,6 @@
 %{
-	#include <stdio.h>	
-	#include <stdlib.h>
+    #include <stdio.h>  
+    #include <stdlib.h>
 %}
 
 %token INTEGER
@@ -10,31 +10,31 @@
 %%
 
 program:
-		program statement '\n'
-		|
-		;
+        program statement '\n'
+        |
+        ;
 
 statement:
-		expr	{ printf("%d\n", $1); }
-		;
+        expr    { printf("%d\n", $1); }
+        ;
 
 expr:
-		INTEGER
-		| expr '+' expr 	{ $$ = $1 + $3; }
-		| expr '-' expr     { $$ = $1 - $3; }
-		| expr '*' expr     { $$ = $1 * $3; }
-		| expr '/' expr     { $$ = $1 / $3; }
-		| '(' expr ')'		{ $$ = $2; }
-		;
+        INTEGER
+        | expr '+' expr     { $$ = $1 + $3; }
+        | expr '-' expr     { $$ = $1 - $3; }
+        | expr '*' expr     { $$ = $1 * $3; }
+        | expr '/' expr     { $$ = $1 / $3; }
+        | '(' expr ')'      { $$ = $2; }
+        ;
 %%
 
 yyerror() {
-	printf("Error");
-	exit(1);
+    printf("Error");
+    exit(1);
 }
 
 int main() {
-	yyparse();
-	return 0;
+    yyparse();
+    return 0;
 }
-	    
+        
