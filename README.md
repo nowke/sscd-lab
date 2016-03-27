@@ -14,3 +14,4 @@
 3. [String a<sup>n</sup>b<sup>n</sup>](yacc/3_regex_ab)
 4. [Expression Validation](yacc/4_expression_valid)
 5. [Nested Forloop](yacc/5_for_loop)
+6. [Nested IF control statement](yacc/6_if_nested)
