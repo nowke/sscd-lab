@@ -7,5 +7,7 @@ main() {
 	printf("k = %d", k); // Output
 	/* End of
 	 * program
+	 // Single
+	 /* ddf 
      */
 }
