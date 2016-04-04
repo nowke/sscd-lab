@@ -10,7 +10,10 @@
     int comments = 0;
 %}
 %%
-"//"    { STATE = SINGLE_LINE; }
+"//"    { if (STATE == NORMAL) {
+            STATE = SINGLE_LINE;
+          }  
+        }
 "/*"    { STATE = MULTILINE; }
 "*/"    { if (STATE == MULTILINE) {
              STATE = NORMAL;
