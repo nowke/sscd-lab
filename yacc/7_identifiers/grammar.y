@@ -16,7 +16,7 @@ S:    UNDERSCORE A      { identifiers++; }
     ;
 
 A:    LETTER A
-    | DIGIT A   
+    | DIGIT A
     | UNDERSCORE A
     | SPACE S
     |
@@ -27,7 +27,7 @@ A:    LETTER A
 yyerror() {
     printf("Invalid statement\n");
     exit(1);
-}       
+}
 
 int main(int argc, char* argv[]) {
     if (argc < 2) {
@@ -39,5 +39,4 @@ int main(int argc, char* argv[]) {
     yyparse();
 
     printf("No.of identifiers: %d\n", identifiers);
-
 }

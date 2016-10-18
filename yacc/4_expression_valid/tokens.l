@@ -1,30 +1,28 @@
 %{
-	#include "y.tab.h"
+    #include "y.tab.h"
 %}
 identifier [_a-zA-Z][_a-zA-Z0-9]*
 
 %%
 
 {identifier} {
-				return ID;
-			 }
+                return ID;
+             }
 
-[0-9]+		 {
-				return DIGIT;
-			 }
+[0-9]+       {
+                return DIGIT;
+             }
 
-[-+/*]	 {
-				return OP;
-			 }
+[-+/*]       {
+                return OP;
+             }
 
-[()*\n]		 { 
-				return *yytext;
-			 }
+[()*\n]      {
+                return *yytext;
+             }
 
-[ \t]		 ;
+[ \t]     ;
 
 %%
 
 int yywrap() { return 1; }
-
-  

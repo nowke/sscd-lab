@@ -1,6 +1,6 @@
 %{
-	#include <stdio.h>
-	#include <stdlib.h>
+  #include <stdio.h>
+  #include <stdlib.h>
 %}
 
 %token ID DIGIT OP
@@ -10,29 +10,29 @@
 %%
 
 program:
-	 	program statement '\n'
-		|
-		;
+    program statement '\n'
+    |
+    ;
 
 statement:
-		expr	{ printf("Valid\n"); }
-		;
+    expr  { printf("Valid\n"); }
+    ;
 
 expr:
-		DIGIT
-		| ID
-		| expr OP expr
-		| '(' expr ')'
-		;
+    DIGIT
+    | ID
+    | expr OP expr
+    | '(' expr ')'
+    ;
 
 %%
 
 yyerror() {
-	printf("Error\n");
-	exit(1);
+    printf("Error\n");
+    exit(1);
 }
 
 int main() {
-	yyparse();
-	return 0;
+    yyparse();
+    return 0;
 }
