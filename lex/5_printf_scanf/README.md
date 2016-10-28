@@ -26,7 +26,9 @@ $ ./run input.c output.c
 
 No.of scanf: 2
 No.of printf: 2
+```
 
+```bash
 $ cat output.c
 
 writef("hello world");
